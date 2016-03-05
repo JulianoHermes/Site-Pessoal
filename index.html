@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<title>Site</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/tablet.css"
+	media="(max-width:600px)">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css"
+	media="(max-width:480px)">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+
+</head>
+<body id="topo">
+
+	<header>
+		<a href="#topo" title="home" id="logo"><i class="fa fa-industry"></i>HERMES</a>
+		<a href="#" id="btnmenu" title="mostrar menu">
+			<img src="imgs/menu2.png" alt="Menu" title="Menu">
+		</a>
+		<nav id="menu">
+			<ul>
+				<li><a href="#topo" title="Home">Home</a></li>
+				<li><a href="#sobre" title="Sobre">Sobre</a></li>
+				<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+				<li><a href="#contato" title="Contato">Contato</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<div id="banner" class="cycle-slideshow" data-cycle-slides="> a" data-cycle-swipe=true data-cycle-swipe-fx=scrollHorz>
+		<img src="imgs/1.jpg" title="Costelinha" alt="Costelinha">
+		<img src="imgs/2.jpg" title="Receitas Suinas" alt="Receitas Suinas">
+		<img src="imgs/3.jpg" title="Receitas Especiais" alt="Receitas Especiais">
+	</div>
+
+	<div class="box" id="sobre">
+		<div class="container">
+			<h1>Sobre:</h1>
+			<div class="coluna">
+				Foto
+			</div>
+			<div class="coluna">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+	</div>
+
+	<div class="box" id="portfolio">
+		<div class="container">
+			<h1>Portfólio:</h1>
+		</div>
+	</div>
+	
+	<div class="box" id="contato">
+		<div class="container">
+			<h1>Entre em Contato:</h1>
+
+			<form name="form1" method="post" action="">
+
+			<label for="nome">Digite seu nome:</label>
+			<br>
+			<input type="text" name="nome" class="box" placeholder="Coloque seu nome completo" required> 
+			<br>
+
+			<label for="email">Digite seu email:</label>
+			<br>
+			<input type="email" name="email" class="box" placeholder="Coloque seu e-mail" required> 
+			<br>
+			
+			<label for="mensagem">Digite sua mensagem</label>
+			<br>
+			<textarea name="mensagem" required class="box" rows="5"></textarea>
+			<br>
+
+			<button type="submit" class="btn"><i class="fa fa-check fa-2x"></i>
+	 			Enviar Mensagem
+	 		</button>
+
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<p>Churrasquito - Todos os direitos reservados<br>
+		Desenvolvido por Juliano Hermes</p>
+		<p>
+			<a href="https://www.facebook.com/juliano.hermes" title="Facebook">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a href="http://www.twitter.com" title="Twitter">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="contato.html" title="Contato">
+				<i class="fa fa-mail"></i>
+			</a>
+		</p>
+	</footer>
+
+<script type="text/javascript">
+	$("#btnmenu").click(function(){
+		$("#menu").toggle();
+	})
+</script>
+</body>
+</html>
