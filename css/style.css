@@ -78,7 +78,7 @@ p{
 
 
 .box{
-	width: 100%;
+	min-width: 100%;
 	float: left;
 	padding: 90px 0px 50px 0px;
 	text-align: center;
@@ -113,11 +113,17 @@ p{
 
 .round{
 	border-radius: 50%;
+	max-width: 100%;
 }
 
 .portfolio{
-	width: 24%;
+	width: 23%;
 	float: left;
+	margin: 0px 5px 0px 5px;
+}
+
+.portfolio-group{
+	position: relative;
 }
 
 .btn{
@@ -138,6 +144,7 @@ p{
 #logo{
 	float: left;
 	margin: 10px;
+	padding-left: 20px;
 	font: 30px Roboto, Tahoma;
 	color: #DDD;
 	transition: all 0.5s;
